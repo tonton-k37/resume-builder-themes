@@ -1,0 +1,321 @@
+#print-area {
+  /* Document */
+  /* ============================================ */
+  /** * 1. Correct the line height in all browsers. * 2. Prevent adjustments of font size after orientation changes in iOS. * 3. Remove gray overlay on links for iOS. */
+  /* Sections */
+  /* ============================================ */
+  /** * Remove the margin in all browsers. */
+  /** * Render the `main` element consistently in IE. */
+  /* Vertical rhythm */
+  /* ============================================ */
+  /* Headings */
+  /* ============================================ */
+  /* Lists (enumeration) */
+  /* ============================================ */
+  /* Lists (definition) */
+  /* ============================================ */
+  /* Grouping content */
+  /* ============================================ */
+  /** * 1. Add the correct box sizing in Firefox. * 2. Show the overflow in Edge and IE. */
+  /** * 1. Correct the inheritance and scaling of font size in all browsers. * 2. Correct the odd `em` font sizing in all browsers. */
+  /* Text-level semantics */
+  /* ============================================ */
+  /** * Remove the gray background on active links in IE 10. */
+  /** * 1. Remove the bottom border in Chrome 57- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+  /** * Add the correct font weight in Chrome, Edge, and Safari. */
+  /** * 1. Correct the inheritance and scaling of font size in all browsers. * 2. Correct the odd `em` font sizing in all browsers. */
+  /** * Add the correct font size in all browsers. */
+  /** * Prevent `sub` and `sup` elements from affecting the line height in * all browsers. */
+  /* Replaced content */
+  /* ============================================ */
+  /** * Prevent vertical alignment issues. */
+  /* Forms */
+  /* ============================================ */
+  /** * Reset form fields to make them styleable. * 1. Make form elements stylable across systems iOS especially. * 2. Inherit text-transform from parent. */
+  /** * Correct cursors for clickable elements. */
+  /** * Improve outlines for Firefox and unify style with input elements & buttons. */
+  /** * Remove padding */
+  /** * Reset to invisible */
+  /** * Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+  /** * Remove the default vertical scrollbar in IE 10+. */
+  /** * Correct the cursor style of increment and decrement buttons in Chrome. */
+  /** * Correct the outline style in Safari. */
+  /** * Remove the inner padding in Chrome and Safari on macOS. */
+  /** * 1. Correct the inability to style clickable types in iOS and Safari. * 2. Fix font inheritance. */
+  /** * Fix appearance for Firefox */
+  /** * Clickable labels */
+  /* Interactive */
+  /* ============================================ */
+  /* * Add the correct display in Edge, IE 10+, and Firefox. */
+  /* * Add the correct display in all browsers. */
+  /* * Remove outline for editable content. */
+  /* Tables */
+  /* ============================================ */
+  /** 1. Correct table border color inheritance in all Chrome and Safari. */
+}
+
+#print-area *,
+#print-area ::before,
+#print-area ::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+#print-area html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+#print-area body {
+  margin: 0;
+}
+
+#print-area main {
+  display: block;
+}
+
+#print-area p,
+#print-area table,
+#print-area blockquote,
+#print-area address,
+#print-area pre,
+#print-area iframe,
+#print-area form,
+#print-area figure,
+#print-area dl {
+  margin: 0;
+}
+
+#print-area h1,
+#print-area h2,
+#print-area h3,
+#print-area h4,
+#print-area h5,
+#print-area h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+#print-area ul,
+#print-area ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#print-area dt {
+  font-weight: bold;
+}
+
+#print-area dd {
+  margin-left: 0;
+}
+
+#print-area hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+#print-area pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+#print-area address {
+  font-style: inherit;
+}
+
+#print-area a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+#print-area abbr[title] {
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+#print-area b,
+#print-area strong {
+  font-weight: bolder;
+}
+
+#print-area code,
+#print-area kbd,
+#print-area samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+#print-area small {
+  font-size: 80%;
+}
+
+#print-area sub,
+#print-area sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#print-area sub {
+  bottom: -0.25em;
+}
+
+#print-area sup {
+  top: -0.5em;
+}
+
+#print-area svg,
+#print-area img,
+#print-area embed,
+#print-area object,
+#print-area iframe {
+  vertical-align: bottom;
+}
+
+#print-area button,
+#print-area input,
+#print-area optgroup,
+#print-area select,
+#print-area textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+#print-area button,
+#print-area [type="button"],
+#print-area [type="reset"],
+#print-area [type="submit"] {
+  cursor: pointer;
+}
+
+#print-area button:disabled,
+#print-area [type="button"]:disabled,
+#print-area [type="reset"]:disabled,
+#print-area [type="submit"]:disabled {
+  cursor: default;
+}
+
+#print-area :-moz-focusring {
+  outline: auto;
+}
+
+#print-area select:disabled {
+  opacity: inherit;
+}
+
+#print-area option {
+  padding: 0;
+}
+
+#print-area fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+#print-area legend {
+  padding: 0;
+}
+
+#print-area progress {
+  vertical-align: baseline;
+}
+
+#print-area textarea {
+  overflow: auto;
+}
+
+#print-area [type="number"]::-webkit-inner-spin-button,
+#print-area [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+#print-area [type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+#print-area [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+#print-area ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+#print-area [type="number"] {
+  -moz-appearance: textfield;
+}
+
+#print-area label[for] {
+  cursor: pointer;
+}
+
+#print-area details {
+  display: block;
+}
+
+#print-area summary {
+  display: list-item;
+}
+
+#print-area [contenteditable]:focus {
+  outline: auto;
+}
+
+#print-area table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+#print-area caption {
+  text-align: left;
+}
+
+#print-area td,
+#print-area th {
+  vertical-align: top;
+  padding: 0;
+}
+
+#print-area th {
+  text-align: left;
+  font-weight: bold;
+}
