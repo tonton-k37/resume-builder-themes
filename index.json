@@ -1,8 +1,8 @@
 {
   "themes": [
     {
-      "name": "sample",
-      "link": "https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/themes/sample/theme.html"
+      "label": "sample",
+      "value": "https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/themes/sample/theme.html"
     }
   ]
 }
