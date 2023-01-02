@@ -81,7 +81,7 @@ As an example, in custom attributes, when the key is "animal" and the value is "
 
 ## Do you support css?
 
-CSS is supported in any format, either inline or as an external resource.
+CSS is supported in inline resource.
 
 ## Do you support Javascript?
 
