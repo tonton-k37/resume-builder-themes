@@ -3,6 +3,7 @@
 <link>
 <meta charset="utf-8" />
 <title>simple resume</title>
+<link ref="stylesheet" href="https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/reset.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
     letter-spacing: 1.2px;
   }
 
-  #side {
+  #resume-body #side {
     width: 33.333%;
     padding: 24px 0px;
     background: #2c5977;
@@ -36,25 +37,26 @@
   }
 
 
-  #side ul {
+  #resume-body #side ul {
     padding-left: 56px;
   }
 
-  #side li {
+  #resume-body #side li {
     margin: 12px 0;
   }
 
-  #side .title {
+  #resume-body #side .title {
     margin-top: 36px;
     border-bottom: 2px solid white;
   }
 
-  #side h2 {
+  #resume-body #side h2 {
     margin-left: 56px;
     font-weight: normal;
+    font-size: 1.2rem;
   }
 
-  #avatar {
+  #resume-body #avatar {
     width: 120px;
     height: 120px;
     overflow: hidden;
@@ -62,35 +64,39 @@
     border-radius: 999px;
   }
 
-  #avatar img {
+  #resume-body #avatar img {
     object-fit: cover;
     height: 100%;
     width: 100%;
   }
 
-  #contacts li {
+  #resume-body #contacts li {
     list-style: none;
   }
 
-  #contacts .icon {
+  #resume-body #contacts .icon {
     background: white;
     border-radius: 999px;
     text-align: center;
     display: inline-block;
     padding: 4px;
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
     color: #2c5977;
   }
 
-  #main {
+  #resume-body #main {
     padding: 24px 48px;
     flex: 1;
     background-color: #dcdcdc;
   }
 
-  #main h1 {
+  #resume-body p {
+    margin: 12px 0px;
+  }
+
+  #resume-body #main h1 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
@@ -98,7 +104,7 @@
     color: #2c5977;
   }
 
-  #main h2 {
+  #resume-body #main h2 {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
@@ -106,7 +112,7 @@
     color: #2c5977;
   }
 
-  #main .title {
+  #resume-body #main .title {
     border-bottom: 2px solid #2c5977;
   }
 
@@ -114,7 +120,7 @@
     margin-top: 36px;
   }
 
-  #main .company-name {
+  #resume-body #main .company-name {
     font-weight: bold;
   }
 
