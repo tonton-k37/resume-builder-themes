@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>blah</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-light.css"
+      integrity="sha512-1d9gwwC3dNW3O+lGwY8zTQrh08a41Ejci46DdzY1aQbqi/7Qr8Asp4ycWPsoD52tKXKrgu8h/lSpig1aAkvlMw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* you can use css */
+      .text-right {
+        text-align: right;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      #profile {
+        display: flex;
+      }
+
+      #profile .profile-detail {
+        flex: 1;
+        font-weight: bold;
+      }
+
+      #profile .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      #profile .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #references {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .references-image {
+        width: 100%;
+        height: 240px;
+      }
+
+      .references-image img {
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="markdown-body">
+      <div>
+        <div class="text-right">
+          <div>Modified At: <span id="created-at"></span></div>
+        </div>
+        <h2>Profile</h2>
+        <div id="profile">
+          <div class="profile-detail">
+            <p>
+              Name:
+              <span data-theme-id="profile-firstName">John</span>&nbsp;
+              <span data-theme-id="profile-lastName">Doe</span>
+            </p>
+            <div>
+              <p>
+                Email:
+                <span data-theme-id="contact-email"
+                  >hello-john@example.com</span
+                >
+              </p>
+              <p>
+                Tell:
+                <span data-theme-id="contact-tell">012-3456-789</span>
+              </p>
+            </div>
+          </div>
+          <div class="profile-image">
+            <img
+              data-theme-id="profile-avatarUrl"
+              src="https://www.shutterstock.com/image-photo/closeup-portrait-yong-woman-casual-600w-1554086789.jpg"
+            />
+          </div>
+        </div>
+        <h3>Summary</h3>
+        <p data-theme-id="profile-summary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2>Skills</h2>
+        <ul>
+          <li data-theme-id="skills">
+            <span data-theme-id="skills-item-name">jump</span>
+          </li>
+          <li data-theme-id="skills">
+            <span data-theme-id="skills-item-name">run</span>
+          </li>
+          <li data-theme-id="skills">
+            <span data-theme-id="skills-item-name">Typescript</span>
+          </li>
+        </ul>
+        <h2>Social</h2>
+        <ul>
+          <li data-theme-id="socials">
+            <a href="yahoo.com" data-theme-id="socials-item-link">
+              <span data-theme-id="socials-item-name">twitter</span>
+            </a>
+          </li>
+        </ul>
+        <h2>Experiences</h2>
+        <div data-theme-id="experiences">
+          <p class="bold">
+            <span data-theme-id="experiences-item-company">Lorem.inc</span>
+            <span data-theme-id="experiences-item-from">2022-08</span
+            >&nbsp;~&nbsp;
+            <span data-theme-id="experiences-item-to">2022-12</span>
+          </p>
+          <p class="bold">
+            Position:
+            <span data-theme-id="experiences-item-position">Big Bos</span>
+          </p>
+          <h3>Summary</h3>
+          <p data-theme-id="experiences-item-summary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <h2>References</h2>
+        <div id="references">
+          <div class="card" data-theme-id="references">
+            <div class="references-image">
+              <img
+                data-theme-id="references-item-avatarUrl"
+                src="https://www.shutterstock.com/image-photo/closeup-portrait-yong-woman-casual-600w-1554086789.jpg"
+              />
+            </div>
+            <p class="bold">
+              <span data-theme-id="references-item-firstName">John</span>
+              <span data-theme-id="references-item-lastName">Doe</span>
+            </p>
+            <p data-theme-id="references-item-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card" data-theme-id="references">
+            <div class="references-image">
+              <img
+                data-theme-id="references-item-avatarUrl"
+                src="https://www.shutterstock.com/image-photo/closeup-portrait-yong-woman-casual-600w-1554086789.jpg"
+              />
+            </div>
+            <p class="bold">
+              <span data-theme-id="references-item-firstName">John</span>
+              <span data-theme-id="references-item-lastName">Doe</span>
+            </p>
+            <p data-theme-id="references-item-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <h2>Custom Attributes</h2>
+        <span data-theme-id="customs-item-myGreatCustom"></span>
+      </div>
+    </div>
+    <!-- you can use js, but use it as outer resource -->
+    <script type="text/javascript" src="./theme-js.js"></script>
+  </body>
+</html>
