@@ -1,216 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
-<meta charset="utf-8" />
-<title>simple resume</title>
-<link ref="stylesheet" href="https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/reset.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-  #resume-body h2 {
-    margin: 0;
-  }
+  <head>
+    <meta charset="utf-8" />
+    <title>simple resume</title>
+    <link
+      ref="stylesheet"
+      href="https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/reset.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #resume-body h2 {
+        margin: 0;
+      }
 
-  #resume-body {
-    height: 100%;
-    display: flex;
-    margin: 0;
-    font-family: 'Anybody', cursive;
-    font-size: 12px;
-    color: #0f1419;
-    letter-spacing: 1.2px;
-  }
+      #resume-body {
+        height: 100%;
+        display: flex;
+        margin: 0;
+        font-family: "Anybody", cursive;
+        font-size: 12px;
+        color: #0f1419;
+        letter-spacing: 1.2px;
+      }
 
-  #resume-body #side {
-    width: 33.333%;
-    padding: 24px 0px;
-    background: #2c5977;
-    color: white;
-    list-style-position: inside;
-    height: 100%;
-    min-height: 100vh;
-  }
+      #resume-body #side {
+        width: 33.333%;
+        padding: 24px 0px;
+        background: #2c5977;
+        color: white;
+        list-style-position: inside;
+        height: 100%;
+        min-height: 100vh;
+      }
 
+      #resume-body #side ul {
+        padding-left: 56px;
+      }
 
-  #resume-body #side ul {
-    padding-left: 56px;
-  }
+      #resume-body #side li {
+        margin: 12px 0;
+      }
 
-  #resume-body #side li {
-    margin: 12px 0;
-  }
+      #resume-body #side .title {
+        margin-top: 36px;
+        border-bottom: 2px solid white;
+      }
 
-  #resume-body #side .title {
-    margin-top: 36px;
-    border-bottom: 2px solid white;
-  }
+      #resume-body #side h2 {
+        margin-left: 56px;
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
 
-  #resume-body #side h2 {
-    margin-left: 56px;
-    font-weight: normal;
-    font-size: 1.2rem;
-  }
+      #resume-body #avatar {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 999px;
+      }
 
-  #resume-body #avatar {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 999px;
-  }
+      #resume-body #avatar img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
 
-  #resume-body #avatar img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+      #resume-body #contacts li {
+        list-style: none;
+      }
 
-  #resume-body #contacts li {
-    list-style: none;
-  }
+      #resume-body #contacts .icon {
+        background: white;
+        border-radius: 999px;
+        text-align: center;
+        display: inline-block;
+        padding: 4px;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        color: #2c5977;
+      }
 
-  #resume-body #contacts .icon {
-    background: white;
-    border-radius: 999px;
-    text-align: center;
-    display: inline-block;
-    padding: 4px;
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    color: #2c5977;
-  }
+      #resume-body #main {
+        padding: 24px 48px;
+        flex: 1;
+        background-color: #dcdcdc;
+      }
 
-  #resume-body #main {
-    padding: 24px 48px;
-    flex: 1;
-    background-color: #dcdcdc;
-  }
+      #resume-body p {
+        margin: 12px 0px;
+      }
 
-  #resume-body p {
-    margin: 12px 0px;
-  }
+      #resume-body #main h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 8px;
+        color: #2c5977;
+      }
 
-  #resume-body #main h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 8px;
-    color: #2c5977;
-  }
+      #resume-body #main h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 8px;
+        color: #2c5977;
+      }
 
-  #resume-body #main h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 8px;
-    color: #2c5977;
-  }
+      #resume-body #main .title {
+        border-bottom: 2px solid #2c5977;
+      }
 
-  #resume-body #main .title {
-    border-bottom: 2px solid #2c5977;
-  }
+      #resume-body section {
+        margin-top: 36px;
+      }
 
-  #resume-body section {
-    margin-top: 36px;
-  }
+      #resume-body #main .company-name {
+        font-weight: bold;
+      }
+    </style>
+  </head>
 
-  #resume-body #main .company-name {
-    font-weight: bold;
-  }
-
-</style>
-</head>
-
-<body>
-  <div id="resume-body">
-    <div id="side">
-      <div id="avatar">
-        <img src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
-          data-theme-id="profile-avatarUrl" />
-      </div>
-      <ul id="contacts">
-        <li>
-          <span class="icon">
-            <i class="fa-solid fa-house fa-2sm"></i>
-          </span>
-          <span data-theme-id="contact-address-country">JP</span>
-          <span data-theme-id="contact-address-province">Tokyo</span>
-          <span data-theme-id="contact-address-city">Some</span>
-        </li>
-        <li>
-          <span class="icon">
-            <i class="fa-solid fa-phone fa-2sm"></i>
-          </span>
-          <span data-theme-id="contact-tell">012-345-6789</span>
-        </li>
-        <li>
-          <span class="icon">
-            <i class="fa-solid fa-envelope fa-sm"></i>
-          </span>
-          <span data-theme-id="contact-address-country">hoge@example.com</span>
-        </li>
-      </ul>
-      <div class="title">
-        <h2>Skills</h2>
-      </div>
-      <ul id="skills">
-        <li data-theme-id="skills">
-          <span data-theme-id="skills-item-name">Typescript</span>
-        </li>
-      </ul>
-      <div class="title">
-        <h2>Education</h2>
-      </div>
-      <ul id="skills">
-        <li data-theme-id="customs">
-          <span data-theme-id="customs-item-name">Kame House</span>
-        </li>
-      </ul>
-    </div>
-    <div id="main">
-      <div class="title">
-        <h1>
-          <span data-theme-id="profile-firstName">Goku</span>&nbsp;<span data-theme-id="profile-lastName">Son</span>
-        </h1>
-      </div>
-      <p data-theme-id="profile-summary">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </p>
-      <section>
+  <body>
+    <div id="resume-body">
+      <div id="side">
+        <div id="avatar">
+          <img
+            src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
+            data-theme-id="profile-avatarUrl"
+          />
+        </div>
+        <ul id="contacts">
+          <li>
+            <span class="icon">
+              <i class="fa-solid fa-house fa-2sm"></i>
+            </span>
+            <span data-theme-id="contact-address-country">JP</span>
+            <span data-theme-id="contact-address-province">Tokyo</span>
+            <span data-theme-id="contact-address-city">Some</span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa-solid fa-phone fa-2sm"></i>
+            </span>
+            <span data-theme-id="contact-tell">012-345-6789</span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa-solid fa-envelope fa-sm"></i>
+            </span>
+            <span data-theme-id="contact-address-country"
+              >hoge@example.com</span
+            >
+          </li>
+        </ul>
         <div class="title">
-          <h2>
-            Work Experiences
-          </h2>
+          <h2>Skills</h2>
         </div>
-        <div data-theme-id="experiences">
-          <p>
-            <span class="company-name" data-theme-id="experiences-item-companyName">Kame House</span>:
-            <span data-theme-id="experiences-item-from">01/2022</span>
-            <span>&nbsp;~&nbsp;</span>
-            <span data-theme-id="experiences-item-to">current</span>
-          </p>
-          <p data-theme-id="experiences-item-position">Super Saiyan</p>
-          <p data-theme-id="experiences-item-summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </p>
+        <ul id="skills">
+          <li data-theme-id="skills">
+            <span data-theme-id="skills-item-name">Typescript</span>
+          </li>
+        </ul>
+        <div class="title">
+          <h2>Education</h2>
         </div>
-      </section>
+        <ul id="skills">
+          <li data-theme-id="customs">
+            <span data-theme-id="customs-item-name">Kame House</span>
+          </li>
+        </ul>
+      </div>
+      <div id="main">
+        <div class="title">
+          <h1>
+            <span data-theme-id="profile-firstName">Goku</span>&nbsp;<span
+              data-theme-id="profile-lastName"
+              >Son</span
+            >
+          </h1>
+        </div>
+        <p data-theme-id="profile-summary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <section>
+          <div class="title">
+            <h2>Work Experiences</h2>
+          </div>
+          <div data-theme-id="experiences">
+            <p>
+              <span
+                class="company-name"
+                data-theme-id="experiences-item-companyName"
+                >Kame House</span
+              >:
+              <span data-theme-id="experiences-item-from">01/2022</span>
+              <span>&nbsp;~&nbsp;</span>
+              <span data-theme-id="experiences-item-to">current</span>
+            </p>
+            <p data-theme-id="experiences-item-position">Super Saiyan</p>
+            <p data-theme-id="experiences-item-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
