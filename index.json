@@ -7,6 +7,10 @@
     {
       "label": "simple",
       "value": "https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/themes/simple_theme/theme.html"
+    },
+    {
+      "label": "classic",
+      "value": "https://raw.githubusercontent.com/tonton-k37/resume-builder-themes/main/themes/classic_theme/theme.html"
     }
   ]
 }

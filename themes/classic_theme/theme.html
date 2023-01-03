@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>simple resume</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css"
+    />
+    <style>
+      #resume-body {
+        padding: 32px 24px;
+        font-family: "Times New Roman", Times, serif;
+        color: #111111;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+        max-width: 960px;
+      }
+
+      #resume-body h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        display: flex;
+        flex-flow: column;
+        line-height: 3rem;
+      }
+
+      #resume-body h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+
+      #resume-body .font-mid {
+        font-size: 1.2rem;
+      }
+
+      #resule-body h3 {
+        font-size: 1.2rem;
+      }
+
+      #resume-body p {
+        margin-top: 8px;
+      }
+
+      #resume-body div > p:first-of-type {
+        margin-top: 0 !important;
+      }
+
+      #resume-body .bold {
+        font-weight: bold;
+      }
+
+      #resume-body hr {
+        margin: 64px 0;
+        border-color: #111111;
+      }
+
+      #resume-body .no-margin {
+        margin: 0 !important;
+      }
+
+      #resume-body #profile {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+
+      #resume-body #profile p {
+        margin-top: 0;
+      }
+
+      #resume-body #profile div:last-of-type {
+        text-align: right;
+      }
+
+      #resume-body .backgrounds {
+        position: relative;
+      }
+
+      #resume-body .backgrounds:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background-color: #111111;
+      }
+
+      #resume-body .backgrounds .background {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 48px;
+        position: relative;
+        margin-top: 40px;
+      }
+
+      #resume-body .backgrounds .background:first-of-type {
+        margin-top: 0;
+      }
+
+      #resume-body .backgrounds .background:before {
+        content: "○";
+        position: absolute;
+        left: 4px;
+        top: 0;
+        font-size: 23px;
+      }
+
+      #resume-body .backgrounds .background div:first-of-type {
+        width: 33.3333%;
+      }
+
+      #resume-body .backgrounds .background div:last-of-type {
+        flex: 1;
+      }
+
+      #resume-body #skills ul {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        gap: 8px 0;
+        text-align: center;
+      }
+
+      #resume-body #references .reference {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 48px;
+        position: relative;
+        margin-top: 40px;
+      }
+
+      #resume-body #references .reference:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #111111;
+        left: 5px;
+      }
+
+      #resume-body #references .reference:first-of-type {
+        margin-top: 0;
+      }
+
+      #resume-body #references .reference div:first-of-type {
+        width: 33.3333%;
+      }
+
+      #resume-body #references .reference div:last-of-type {
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="resume-body">
+      <div id="profile">
+        <div>
+          <h1>
+            <span data-theme-id="profile-firstName">Martin</span>
+            <span data-theme-id="profile-lastName">Thunder</span>
+          </h1>
+          <p class="font-mid" data-theme-id="profile-profession">
+            Web developer
+          </p>
+        </div>
+        <div>
+          <p id="address" class="bold">
+            <!-- <span data-theme-id="contact-address-building"
+              >Green Heights #512</span
+            > -->
+            , <span data-theme-id="contact-address-street">1-2-3</span>,
+            <span data-theme-id="contact-address-city">Musashino-shi</span>
+          </p>
+          <p class="bold">
+            <span data-theme-id="contact-address-state">Tokyo</span>
+            <span data-theme-id="contact-address-zipCode">180-0012</span>,
+            <span data-theme-id="contact-address-country">Japan</span>
+          </p>
+          <p data-theme-id="contact-tell">81-80-1234-5678</p>
+          <p data-theme-id="contac-email">john.doe@example.com</p>
+          <p data-theme-id="customs-item-website">https://example.com</p>
+        </div>
+      </div>
+      <hr />
+      <h2>Work Experiences</h2>
+      <div class="backgrounds">
+        <div class="background" data-theme-id="experiences">
+          <div>
+            <h3 data-theme-id="experiences-item-companyName">
+              Lorem Ipsum.inc
+            </h3>
+            <p>
+              <span data-theme-id="experiences-item-from">1999</span
+              >&nbsp;~&nbsp;<span data-theme-id="experiences-item-to"
+                >2000</span
+              >
+            </p>
+          </div>
+          <div>
+            <p
+              class="bold font-mid no-margin"
+              data-theme-id="experiences-item-position"
+            >
+              Technical Support
+            </p>
+            <p data-theme-id="experiences-item-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2>Educations</h2>
+      <div class="backgrounds">
+        <div class="background" data-theme-id="educations">
+          <div>
+            <h3 data-theme-id="educations-item-name">Lorem University</h3>
+            <p>
+              <span data-theme-id="educations-item-from">1999</span
+              >&nbsp;~&nbsp;<span data-theme-id="educations-item-to">2000</span>
+            </p>
+          </div>
+          <div>
+            <p
+              class="bold font-mid no-margin"
+              data-theme-id="educations-item-major"
+            >
+              Web Engineering
+            </p>
+            <p data-theme-id="educations-item-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2>Skills</h2>
+      <div id="skills">
+        <ul>
+          <li><span data-theme-id="skills-item-name">HTML</span></li>
+          <li><span data-theme-id="skills-item-name">CSS</span></li>
+          <li><span data-theme-id="skills-item-name">Javascript</span></li>
+          <li><span data-theme-id="skills-item-name">Typescript</span></li>
+          <li><span data-theme-id="skills-item-name">MySQL</span></li>
+        </ul>
+      </div>
+      <hr />
+      <h2>References</h2>
+      <div id="references">
+        <div class="reference" data-theme-id="references">
+          <div>
+            <h3 class="bold">
+              <span data-theme-id="references-item-firstName">John</span
+              >&nbsp;<span data-theme-id="references-item-lastName">Osamu</span>
+            </h3>
+            <p data-theme-id="references-item-relation">My Mate</p>
+          </div>
+          <div>
+            <p data-theme-id="references-item-summary" class="no-margin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function removeFirstComma() {
+        const doc = document.getElementById("address");
+        if (doc.innerText[0] === ",") {
+          doc.innerText = doc.innerText.slice(1);
+        }
+      }
+      removeFirstComma();
+    </script>
+  </body>
+</html>
