@@ -83,6 +83,9 @@ As an example, in custom attributes, when the key is "animal" and the value is "
 
 CSS is supported in inline resource.
 
+It is recommended that CSS be written within the #print-area so that CSS is applied within the #print-area, as this may break the layout of the design.
+Incidentally, we provide reset css using style.css, so please include a link to the css in the header if necessary.
+
 ## Do you support Javascript?
 
 Javascript is basically supported. However, direct Javascript in HTML may cause syntax errors when loading the theme, so we recommend loading Javascript as an external resource if possible.
